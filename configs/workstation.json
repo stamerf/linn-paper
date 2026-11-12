@@ -1,0 +1,14 @@
+{
+  "data_dir": "daten",
+  "output_dir": "results/ms1",
+  "seed": 1729,
+  "period_start": "2026-01-01",
+  "validation_start": "2026-06-01",
+  "test_start": "2026-07-16",
+  "period_end_exclusive": "2026-09-01",
+  "max_elapsed_hours": 24.0,
+  "rounding_tolerance_hours": 0.02,
+  "selection": {"group": "APS", "count": 3, "min_records": 100, "min_orders": 15, "min_products": 8, "min_valid_fraction": 0.95},
+  "model": {"hidden_dims": [32, 16]},
+  "training": {"learning_rate": 0.001, "batch_size": 32, "smoke_steps": 3, "constraint_weight": 0.1}
+}

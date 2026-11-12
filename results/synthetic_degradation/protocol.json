@@ -1,0 +1,204 @@
+{
+  "settings": {
+    "simulation_config": "configs/workstation_synthetic.json",
+    "frozen_choices": "results/synthetic/selected_configs.json",
+    "output_dir": "results/synthetic_degradation",
+    "simulation_seeds": [
+      811,
+      977,
+      1231
+    ],
+    "paired_seeds": [
+      101,
+      202
+    ],
+    "label_completeness": [
+      1.0,
+      0.75,
+      0.5,
+      0.25,
+      0.1,
+      0.05
+    ],
+    "quantity_completeness": [
+      1.0,
+      0.25,
+      0.05
+    ],
+    "max_epochs": 160,
+    "patience": 25,
+    "min_delta": 0.0001,
+    "material_improvement_threshold": 0.05
+  },
+  "simulation_config": {
+    "output_dir": "results/synthetic",
+    "simulation": {
+      "seed": 731,
+      "jobs_per_machine": 600,
+      "start_time": "2026-01-01T00:00:00",
+      "machines": [
+        {
+          "machine": "SIM_A",
+          "rate_units_per_hour": 40.0
+        },
+        {
+          "machine": "SIM_B",
+          "rate_units_per_hour": 65.0
+        },
+        {
+          "machine": "SIM_C",
+          "rate_units_per_hour": 90.0
+        }
+      ],
+      "product_work_factors": {
+        "P1": 0.7,
+        "P2": 1.0,
+        "P3": 1.5
+      },
+      "minimum_quantity": 20,
+      "maximum_quantity": 160,
+      "arrival_mean_hours": 3.5,
+      "processing_log_noise_sigma": 0.05,
+      "calendar_amplitude": 0.08,
+      "batch_nonlinearity": 0.08,
+      "pause_base_hours": 0.04,
+      "pause_per_unit_hours": 0.0004,
+      "pause_random_mean_hours": 0.025,
+      "train_fraction": 0.6,
+      "validation_fraction": 0.2
+    },
+    "numeric_features": [
+      "planned_quantity"
+    ],
+    "rounding_tolerance_hours": 0.0,
+    "tuning_seeds": [
+      17,
+      29
+    ],
+    "evaluation_seeds": [
+      101,
+      202,
+      303
+    ],
+    "max_epochs": 200,
+    "patience": 30,
+    "min_delta": 0.0001,
+    "candidates": [
+      {
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      {
+        "hidden_dims": [
+          64,
+          32
+        ],
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      }
+    ],
+    "constraint_weights": [
+      0.1,
+      1.0
+    ],
+    "success": {
+      "minimum_test_r2": 0.8,
+      "maximum_test_wape": 0.15
+    }
+  },
+  "frozen_choices": {
+    "SIM_A:full": {
+      "candidate": {
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      "candidate_index": 0,
+      "constraint_weight": 0.1
+    },
+    "SIM_A:limited": {
+      "candidate": {
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      "candidate_index": 0
+    },
+    "SIM_B:full": {
+      "candidate": {
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      "candidate_index": 0,
+      "constraint_weight": 0.1
+    },
+    "SIM_B:limited": {
+      "candidate": {
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      "candidate_index": 0
+    },
+    "SIM_C:full": {
+      "candidate": {
+        "hidden_dims": [
+          64,
+          32
+        ],
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      "candidate_index": 1,
+      "constraint_weight": 1.0
+    },
+    "SIM_C:limited": {
+      "candidate": {
+        "hidden_dims": [
+          64,
+          32
+        ],
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      "candidate_index": 1
+    }
+  },
+  "core_hashes": {
+    "src\\linn\\training\\tuning.py": "81d13ce944a694d8083582ec83f5c6ea243104713ecefe3058fbd9cd1a22fd3e",
+    "src\\linn\\training\\trainer.py": "e4461b0e1cc093b880fb7b3a2abb455be0f88103015025ffb21a33c4d1e82800",
+    "src\\linn\\training\\losses.py": "066562952e1da01a5a1d2d5ed917c2f7ff4dd2b98f2c42776eb733a3b2100a14",
+    "src\\linn\\data\\workstation_dataset.py": "c4c2d9da89ecd3b2cb51677c7af90554b1ba28a8e1ec5fc3db0d501553f04622",
+    "src\\linn\\data\\simulation.py": "7ce90023ef62764d34a15057f47e02767022493b6e8eecf55d62ea51dac94d2f",
+    "src\\linn\\evaluation\\degradation.py": "459e1817629cae71d1c767863fc2aba4d1b7d13f34683bcc1330d8d59fbb9e74",
+    "src\\linn\\models\\neural_model.py": "3ced85bb063205fe255e0d6daf2f30988c3d1daa936457ebc68f61cdeb20492c",
+    "src\\linn\\constraints\\workstation_constraints.py": "e44389f6fe4b08ad11897ed58df320e51c2dc907e236c553427cb00be1ceac59",
+    "src\\linn\\processes\\workstation.py": "cf4346f7c6406c0aef4067d61452795bcde9c251731935b4ed68dba196ddde58",
+    "src\\linn\\experiments\\synthetic_degradation.py": "9f5eec7851b20cbf94663fc4bccfad7c6af8b2ecd77aea1f0476de6387efb429"
+  }
+}

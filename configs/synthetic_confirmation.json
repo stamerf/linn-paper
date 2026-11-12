@@ -1,0 +1,14 @@
+{
+  "simulation_config": "configs/workstation_synthetic.json",
+  "frozen_choices": "results/synthetic/selected_configs.json",
+  "output_dir": "results/synthetic_confirmation",
+  "simulation_seeds": [4001, 4003, 4007, 4013, 4019, 4021, 4027, 4049, 4051, 4057, 4073, 4079, 4091, 4093, 4099, 4111, 4127, 4129, 4133, 4139],
+  "label_completeness": [1.0, 0.05],
+  "max_epochs": 160,
+  "patience": 25,
+  "min_delta": 0.0001,
+  "primary_completeness": 0.05,
+  "practical_threshold": 0.05,
+  "bootstrap_seed": 61031,
+  "bootstrap_replicates": 20000
+}

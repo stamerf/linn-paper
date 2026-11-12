@@ -1,0 +1,13 @@
+{
+  "simulation_config": "configs/workstation_synthetic.json",
+  "frozen_choices": "results/synthetic/selected_configs.json",
+  "output_dir": "results/synthetic_degradation",
+  "simulation_seeds": [811, 977, 1231],
+  "paired_seeds": [101, 202],
+  "label_completeness": [1.0, 0.75, 0.5, 0.25, 0.1, 0.05],
+  "quantity_completeness": [1.0, 0.25, 0.05],
+  "max_epochs": 160,
+  "patience": 25,
+  "min_delta": 0.0001,
+  "material_improvement_threshold": 0.05
+}

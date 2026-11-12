@@ -1,0 +1,82 @@
+{
+  "output_dir": "results/synthetic",
+  "simulation": {
+    "seed": 731,
+    "jobs_per_machine": 600,
+    "start_time": "2026-01-01T00:00:00",
+    "machines": [
+      {
+        "machine": "SIM_A",
+        "rate_units_per_hour": 40.0
+      },
+      {
+        "machine": "SIM_B",
+        "rate_units_per_hour": 65.0
+      },
+      {
+        "machine": "SIM_C",
+        "rate_units_per_hour": 90.0
+      }
+    ],
+    "product_work_factors": {
+      "P1": 0.7,
+      "P2": 1.0,
+      "P3": 1.5
+    },
+    "minimum_quantity": 20,
+    "maximum_quantity": 160,
+    "arrival_mean_hours": 3.5,
+    "processing_log_noise_sigma": 0.05,
+    "calendar_amplitude": 0.08,
+    "batch_nonlinearity": 0.08,
+    "pause_base_hours": 0.04,
+    "pause_per_unit_hours": 0.0004,
+    "pause_random_mean_hours": 0.025,
+    "train_fraction": 0.6,
+    "validation_fraction": 0.2
+  },
+  "numeric_features": [
+    "planned_quantity"
+  ],
+  "rounding_tolerance_hours": 0.0,
+  "tuning_seeds": [
+    17,
+    29
+  ],
+  "evaluation_seeds": [
+    101,
+    202,
+    303
+  ],
+  "max_epochs": 200,
+  "patience": 30,
+  "min_delta": 0.0001,
+  "candidates": [
+    {
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "learning_rate": 0.003,
+      "weight_decay": 0.0001,
+      "batch_size": 32
+    },
+    {
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "learning_rate": 0.003,
+      "weight_decay": 0.0001,
+      "batch_size": 32
+    }
+  ],
+  "constraint_weights": [
+    0.1,
+    1.0
+  ],
+  "success": {
+    "minimum_test_r2": 0.8,
+    "maximum_test_wape": 0.15
+  }
+}

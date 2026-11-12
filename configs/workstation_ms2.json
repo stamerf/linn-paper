@@ -1,0 +1,17 @@
+{
+  "preprocessing_config": "configs/workstation.json",
+  "output_dir": "results/ms2",
+  "tuning_seeds": [17, 29],
+  "evaluation_seeds": [101, 202, 303],
+  "max_epochs": 180,
+  "patience": 25,
+  "min_delta": 0.0001,
+  "candidates": [
+    {"hidden_dims": [16], "learning_rate": 0.001, "weight_decay": 0.001, "batch_size": 32},
+    {"hidden_dims": [16], "learning_rate": 0.003, "weight_decay": 0.001, "batch_size": 32},
+    {"hidden_dims": [32, 16], "learning_rate": 0.001, "weight_decay": 0.001, "batch_size": 32},
+    {"hidden_dims": [32, 16], "learning_rate": 0.003, "weight_decay": 0.001, "batch_size": 32}
+  ],
+  "constraint_weights": [0.1, 1.0, 10.0],
+  "success": {"minimum_relative_mae_improvement": 0.1, "maximum_violation_fraction": 0.01}
+}

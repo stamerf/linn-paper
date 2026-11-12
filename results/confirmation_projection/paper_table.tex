@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering\small
+\caption{Post-hoc comparisons on the reproduced 20-world synthetic design. Training and validation labels are both reduced. Values average three workstations equally within each world and then average 20 worlds. Duration errors are in hours. Additional comparator analyses are descriptive.}
+\label{tab:confirmation_projection}
+\begin{tabular}{llrrr}
+\toprule
+Labels & Method & Elapsed MAE & Booked MAE & Violations (\%) \\
+\midrule
+100\% & Ridge & 0.2437 & 0.2423 & 3.56 \\
+100\% & Ridge + Projection & 0.2391 & 0.2353 & 0.00 \\
+100\% & Data-driven NN & 0.0895 & 0.0858 & 0.10 \\
+100\% & Data-driven NN + Projection & 0.0895 & 0.0858 & 0.00 \\
+100\% & Domain-informed NN & 0.0896 & 0.0858 & 0.15 \\
+100\% & Domain-informed NN + Projection & 0.0896 & 0.0858 & 0.00 \\
+\midrule
+5\% & Ridge & 0.3176 & 0.3244 & 43.12 \\
+5\% & Ridge + Projection & 0.2992 & 0.2961 & 0.00 \\
+5\% & Data-driven NN & 0.3665 & 0.3524 & 44.07 \\
+5\% & Data-driven NN + Projection & 0.3309 & 0.3309 & 0.00 \\
+5\% & Domain-informed NN & 0.2961 & 0.2887 & 25.15 \\
+5\% & Domain-informed NN + Projection & 0.2892 & 0.2822 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

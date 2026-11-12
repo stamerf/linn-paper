@@ -1,0 +1,12 @@
+{
+  "completeness": 0.05,
+  "target": "elapsed_hours",
+  "metric": "relative_improvement",
+  "mean": 0.18795751276452488,
+  "ci_low": 0.13875218277096302,
+  "ci_high": 0.23824234451071455,
+  "world_sd": 0.11623549555687143,
+  "n_worlds": 20,
+  "supports_positive_effect": true,
+  "supports_practical_threshold": true
+}

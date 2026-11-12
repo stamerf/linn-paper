@@ -1,0 +1,63 @@
+\begin{table}
+\caption{Synthetic degradation. Standard deviations across three simulation worlds after averaging paired mask/optimizer seeds.}
+\begin{tabular}{lllrlrrrrrr}
+\toprule
+mechanism & machine & target & completeness & method & MAE\_mean & MAE\_world\_sd & RMSE\_mean & R2\_mean & violation\_mean & violation\_world\_sd \\
+\midrule
+labels & SIM\_A & elapsed\_hours & 0.050 & data\_driven & 0.502 & 0.161 & 0.670 & 0.816 & 0.476 & 0.133 \\
+labels & SIM\_A & elapsed\_hours & 0.050 & domain\_informed & 0.323 & 0.081 & 0.442 & 0.921 & 0.283 & 0.036 \\
+labels & SIM\_A & elapsed\_hours & 0.100 & data\_driven & 0.207 & 0.035 & 0.276 & 0.970 & 0.294 & 0.069 \\
+labels & SIM\_A & elapsed\_hours & 0.100 & domain\_informed & 0.201 & 0.035 & 0.271 & 0.971 & 0.201 & 0.040 \\
+labels & SIM\_A & elapsed\_hours & 0.250 & data\_driven & 0.141 & 0.013 & 0.189 & 0.986 & 0.129 & 0.008 \\
+labels & SIM\_A & elapsed\_hours & 0.250 & domain\_informed & 0.139 & 0.014 & 0.186 & 0.986 & 0.100 & 0.029 \\
+labels & SIM\_A & elapsed\_hours & 0.500 & data\_driven & 0.126 & 0.017 & 0.170 & 0.989 & 0.068 & 0.032 \\
+labels & SIM\_A & elapsed\_hours & 0.500 & domain\_informed & 0.125 & 0.016 & 0.169 & 0.989 & 0.058 & 0.029 \\
+labels & SIM\_A & elapsed\_hours & 0.750 & data\_driven & 0.125 & 0.014 & 0.169 & 0.989 & 0.017 & 0.011 \\
+labels & SIM\_A & elapsed\_hours & 0.750 & domain\_informed & 0.126 & 0.014 & 0.171 & 0.989 & 0.013 & 0.008 \\
+labels & SIM\_A & elapsed\_hours & 1.000 & data\_driven & 0.120 & 0.013 & 0.165 & 0.989 & 0.000 & 0.000 \\
+labels & SIM\_A & elapsed\_hours & 1.000 & domain\_informed & 0.120 & 0.013 & 0.166 & 0.989 & 0.001 & 0.002 \\
+labels & SIM\_B & elapsed\_hours & 0.050 & data\_driven & 0.287 & 0.057 & 0.414 & 0.824 & 0.472 & 0.089 \\
+labels & SIM\_B & elapsed\_hours & 0.050 & domain\_informed & 0.212 & 0.048 & 0.294 & 0.912 & 0.217 & 0.051 \\
+labels & SIM\_B & elapsed\_hours & 0.100 & data\_driven & 0.136 & 0.016 & 0.192 & 0.961 & 0.272 & 0.030 \\
+labels & SIM\_B & elapsed\_hours & 0.100 & domain\_informed & 0.124 & 0.011 & 0.167 & 0.971 & 0.186 & 0.017 \\
+labels & SIM\_B & elapsed\_hours & 0.250 & data\_driven & 0.089 & 0.009 & 0.124 & 0.985 & 0.078 & 0.034 \\
+labels & SIM\_B & elapsed\_hours & 0.250 & domain\_informed & 0.089 & 0.007 & 0.122 & 0.985 & 0.071 & 0.018 \\
+labels & SIM\_B & elapsed\_hours & 0.500 & data\_driven & 0.083 & 0.006 & 0.110 & 0.988 & 0.032 & 0.037 \\
+labels & SIM\_B & elapsed\_hours & 0.500 & domain\_informed & 0.083 & 0.006 & 0.110 & 0.988 & 0.032 & 0.037 \\
+labels & SIM\_B & elapsed\_hours & 0.750 & data\_driven & 0.079 & 0.003 & 0.106 & 0.989 & 0.003 & 0.002 \\
+labels & SIM\_B & elapsed\_hours & 0.750 & domain\_informed & 0.079 & 0.003 & 0.107 & 0.989 & 0.003 & 0.002 \\
+labels & SIM\_B & elapsed\_hours & 1.000 & data\_driven & 0.077 & 0.003 & 0.104 & 0.989 & 0.000 & 0.000 \\
+labels & SIM\_B & elapsed\_hours & 1.000 & domain\_informed & 0.077 & 0.003 & 0.104 & 0.989 & 0.000 & 0.000 \\
+labels & SIM\_C & elapsed\_hours & 0.050 & data\_driven & 0.202 & 0.034 & 0.280 & 0.843 & 0.399 & 0.089 \\
+labels & SIM\_C & elapsed\_hours & 0.050 & domain\_informed & 0.130 & 0.029 & 0.183 & 0.931 & 0.081 & 0.031 \\
+labels & SIM\_C & elapsed\_hours & 0.100 & data\_driven & 0.096 & 0.016 & 0.140 & 0.960 & 0.182 & 0.050 \\
+labels & SIM\_C & elapsed\_hours & 0.100 & domain\_informed & 0.083 & 0.004 & 0.117 & 0.972 & 0.053 & 0.012 \\
+labels & SIM\_C & elapsed\_hours & 0.250 & data\_driven & 0.071 & 0.003 & 0.097 & 0.981 & 0.022 & 0.016 \\
+labels & SIM\_C & elapsed\_hours & 0.250 & domain\_informed & 0.069 & 0.003 & 0.095 & 0.982 & 0.008 & 0.008 \\
+labels & SIM\_C & elapsed\_hours & 0.500 & data\_driven & 0.063 & 0.002 & 0.086 & 0.985 & 0.001 & 0.002 \\
+labels & SIM\_C & elapsed\_hours & 0.500 & domain\_informed & 0.063 & 0.001 & 0.086 & 0.985 & 0.001 & 0.002 \\
+labels & SIM\_C & elapsed\_hours & 0.750 & data\_driven & 0.060 & 0.002 & 0.083 & 0.986 & 0.000 & 0.000 \\
+labels & SIM\_C & elapsed\_hours & 0.750 & domain\_informed & 0.061 & 0.003 & 0.083 & 0.986 & 0.000 & 0.000 \\
+labels & SIM\_C & elapsed\_hours & 1.000 & data\_driven & 0.059 & 0.001 & 0.081 & 0.987 & 0.000 & 0.000 \\
+labels & SIM\_C & elapsed\_hours & 1.000 & domain\_informed & 0.059 & 0.001 & 0.082 & 0.987 & 0.000 & 0.000 \\
+quantity & SIM\_A & elapsed\_hours & 0.050 & data\_driven & 1.188 & 0.015 & 1.460 & 0.170 & 0.079 & 0.096 \\
+quantity & SIM\_A & elapsed\_hours & 0.050 & domain\_informed & 1.189 & 0.017 & 1.460 & 0.170 & 0.094 & 0.119 \\
+quantity & SIM\_A & elapsed\_hours & 0.250 & data\_driven & 1.000 & 0.031 & 1.303 & 0.339 & 0.125 & 0.011 \\
+quantity & SIM\_A & elapsed\_hours & 0.250 & domain\_informed & 0.999 & 0.031 & 1.303 & 0.339 & 0.119 & 0.009 \\
+quantity & SIM\_A & elapsed\_hours & 1.000 & data\_driven & 0.120 & 0.013 & 0.165 & 0.989 & 0.000 & 0.000 \\
+quantity & SIM\_A & elapsed\_hours & 1.000 & domain\_informed & 0.120 & 0.013 & 0.166 & 0.989 & 0.001 & 0.002 \\
+quantity & SIM\_B & elapsed\_hours & 0.050 & data\_driven & 0.708 & 0.025 & 0.870 & 0.243 & 0.006 & 0.002 \\
+quantity & SIM\_B & elapsed\_hours & 0.050 & domain\_informed & 0.708 & 0.025 & 0.870 & 0.243 & 0.006 & 0.002 \\
+quantity & SIM\_B & elapsed\_hours & 0.250 & data\_driven & 0.607 & 0.029 & 0.799 & 0.362 & 0.033 & 0.030 \\
+quantity & SIM\_B & elapsed\_hours & 0.250 & domain\_informed & 0.607 & 0.029 & 0.799 & 0.362 & 0.035 & 0.032 \\
+quantity & SIM\_B & elapsed\_hours & 1.000 & data\_driven & 0.077 & 0.003 & 0.104 & 0.989 & 0.000 & 0.000 \\
+quantity & SIM\_B & elapsed\_hours & 1.000 & domain\_informed & 0.077 & 0.003 & 0.104 & 0.989 & 0.000 & 0.000 \\
+quantity & SIM\_C & elapsed\_hours & 0.050 & data\_driven & 0.495 & 0.008 & 0.604 & 0.277 & 0.011 & 0.005 \\
+quantity & SIM\_C & elapsed\_hours & 0.050 & domain\_informed & 0.496 & 0.007 & 0.604 & 0.278 & 0.007 & 0.005 \\
+quantity & SIM\_C & elapsed\_hours & 0.250 & data\_driven & 0.407 & 0.020 & 0.535 & 0.436 & 0.010 & 0.010 \\
+quantity & SIM\_C & elapsed\_hours & 0.250 & domain\_informed & 0.408 & 0.018 & 0.537 & 0.431 & 0.006 & 0.010 \\
+quantity & SIM\_C & elapsed\_hours & 1.000 & data\_driven & 0.059 & 0.001 & 0.081 & 0.987 & 0.000 & 0.000 \\
+quantity & SIM\_C & elapsed\_hours & 1.000 & domain\_informed & 0.059 & 0.001 & 0.082 & 0.987 & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

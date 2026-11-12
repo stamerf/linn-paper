@@ -1,0 +1,7 @@
+{
+  "fits": 240,
+  "protected_unchanged": true,
+  "sparse_validation": true,
+  "test_tuning": false,
+  "industrial_ms3": false
+}

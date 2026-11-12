@@ -1,0 +1,11 @@
+{
+  "generator_repeat_exact": true,
+  "first_seed_neural_retraining_exact": true,
+  "finite_predictions": true,
+  "industrial_raw_and_ms2_unchanged": true,
+  "selected_config_hash": "a630941049e79b9ed91985800206f86b563e9063c9643c2f8ad2af23dd1e0a74",
+  "test_used_for_tuning": false,
+  "tests_passed": 37,
+  "figures_visually_inspected": 5,
+  "saved_metrics_recomputed": true
+}

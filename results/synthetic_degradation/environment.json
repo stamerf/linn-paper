@@ -1,0 +1,11 @@
+{
+  "python": "3.9.7",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "torch": "2.5.1+cpu",
+    "sklearn": "1.0.1",
+    "matplotlib": "3.5.0"
+  }
+}

@@ -1,0 +1,24 @@
+\begin{table}
+\caption{Synthetic diagnostic, not industrial validation. Seed SD concerns optimization only.}
+\begin{tabular}{lllrrrrrr}
+\toprule
+machine & method & target & MAE\_mean & MAE\_sd & RMSE\_mean & R2\_mean & WAPE\_mean & violation\_mean \\
+\midrule
+SIM\_A & data\_driven & elapsed\_hours & 0.127 & 0.004 & 0.189 & 0.985 & 0.045 & 0.000 \\
+SIM\_A & domain\_informed & elapsed\_hours & 0.127 & 0.004 & 0.189 & 0.985 & 0.045 & 0.000 \\
+SIM\_A & limited\_features & elapsed\_hours & 1.097 & 0.013 & 1.336 & 0.274 & 0.392 & 0.003 \\
+SIM\_A & median & elapsed\_hours & 1.250 & 0.000 & 1.628 & -0.078 & 0.446 & 0.000 \\
+SIM\_A & oracle\_mean & elapsed\_hours & 0.112 & 0.000 & 0.162 & 0.989 & 0.040 & 0.000 \\
+SIM\_B & data\_driven & elapsed\_hours & 0.066 & 0.003 & 0.088 & 0.994 & 0.039 & 0.006 \\
+SIM\_B & domain\_informed & elapsed\_hours & 0.066 & 0.003 & 0.088 & 0.994 & 0.039 & 0.006 \\
+SIM\_B & limited\_features & elapsed\_hours & 0.753 & 0.005 & 0.899 & 0.365 & 0.443 & 0.000 \\
+SIM\_B & median & elapsed\_hours & 0.895 & 0.000 & 1.141 & -0.024 & 0.526 & 0.000 \\
+SIM\_B & oracle\_mean & elapsed\_hours & 0.058 & 0.000 & 0.079 & 0.995 & 0.034 & 0.000 \\
+SIM\_C & data\_driven & elapsed\_hours & 0.060 & 0.003 & 0.081 & 0.987 & 0.050 & 0.003 \\
+SIM\_C & domain\_informed & elapsed\_hours & 0.059 & 0.002 & 0.081 & 0.987 & 0.049 & 0.000 \\
+SIM\_C & limited\_features & elapsed\_hours & 0.514 & 0.006 & 0.616 & 0.262 & 0.431 & 0.000 \\
+SIM\_C & median & elapsed\_hours & 0.557 & 0.000 & 0.720 & -0.006 & 0.466 & 0.000 \\
+SIM\_C & oracle\_mean & elapsed\_hours & 0.050 & 0.000 & 0.071 & 0.990 & 0.042 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

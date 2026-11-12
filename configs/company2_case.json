@@ -1,0 +1,21 @@
+{
+  "preprocessing_config": "configs/workstation.json",
+  "output_dir": "results/company2_case",
+  "selection": {"min_train": 15, "min_validation": 5},
+  "prior_test_machines": ["PSK 25", "PSK 26", "PSK 28"],
+  "tuning_seeds": [17, 29],
+  "evaluation_seeds": [101, 202, 303, 404, 505],
+  "completeness": [1.0, 0.25, 0.1],
+  "max_epochs": 220,
+  "patience": 35,
+  "min_delta": 0.0001,
+  "rounding_tolerance_hours": 0.02,
+  "candidates": [
+    {"hidden_dims": [16], "learning_rate": 0.001, "weight_decay": 0.001, "batch_size": 32},
+    {"hidden_dims": [16], "learning_rate": 0.003, "weight_decay": 0.001, "batch_size": 32},
+    {"hidden_dims": [32, 16], "learning_rate": 0.001, "weight_decay": 0.001, "batch_size": 32},
+    {"hidden_dims": [32, 16], "learning_rate": 0.003, "weight_decay": 0.001, "batch_size": 32}
+  ],
+  "constraint_weights": [0.1, 1.0, 10.0],
+  "ridge_alpha": 1.0
+}

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the archived version of this research software when available."
+type: software
+title: "LINN: Domain-informed identification of workstation durations"
+authors:
+  - family-names: Stamer
+    given-names: Florian
+    affiliation: Leuphana University Lueneburg
+version: 0.1.0
+repository-code: "https://github.com/stamerf/linn-paper"
+date-released: 2026-11-12
+keywords:
+  - production logistics
+  - sparse labels
+  - constrained regression
+  - synthetic data

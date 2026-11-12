@@ -1,0 +1,17 @@
+\begin{table}
+\caption{Sparse training and validation labels: macro metrics over 20 synthetic worlds and three machines.}
+\begin{tabular}{rllrrrrr}
+\toprule
+completeness & target & method & MAE & RMSE & R2 & constraint_violation & budget_hits \\
+\midrule
+0.0500 & booked_hours & data_driven & 0.3524 & 0.4802 & 0.8051 & 0.4407 & 1 \\
+0.0500 & booked_hours & domain_informed & 0.2887 & 0.4055 & 0.8559 & 0.2515 & 4 \\
+0.0500 & elapsed_hours & data_driven & 0.3665 & 0.5027 & 0.7838 & 0.4407 & 1 \\
+0.0500 & elapsed_hours & domain_informed & 0.2961 & 0.4099 & 0.8538 & 0.2515 & 4 \\
+1.0000 & booked_hours & data_driven & 0.0858 & 0.1211 & 0.9880 & 0.0010 & 1 \\
+1.0000 & booked_hours & domain_informed & 0.0858 & 0.1211 & 0.9880 & 0.0015 & 1 \\
+1.0000 & elapsed_hours & data_driven & 0.0895 & 0.1243 & 0.9875 & 0.0010 & 1 \\
+1.0000 & elapsed_hours & domain_informed & 0.0896 & 0.1245 & 0.9875 & 0.0015 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}

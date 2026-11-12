@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\caption{Post-hoc feasibility baselines in the exploratory synthetic degradation study. Macro MAE in hours and joint violations over three worlds, three machines and two paired seeds. Training labels are reduced; validation labels remain complete. Projection is Euclidean in hours onto $d\geq0$, $b\geq0$, $b\leq d$.}
+\label{tab:projection_baselines}
+\begin{tabular}{llrrr}
+\toprule
+Labels & Method & MAE $d$ & MAE $b$ & Viol. (\%) \\
+\midrule
+100\% & Ridge & 0.254 & 0.252 & 5.3 \\
+100\% & Ridge + Projection & 0.245 & 0.239 & 0.0 \\
+100\% & Data-driven NN & 0.085 & 0.081 & 0.0 \\
+100\% & Data-driven NN + Projection & 0.085 & 0.081 & 0.0 \\
+100\% & Domain-informed NN & 0.086 & 0.082 & 0.0 \\
+\midrule
+10\% & Ridge & 0.277 & 0.280 & 40.1 \\
+10\% & Ridge + Projection & 0.265 & 0.260 & 0.0 \\
+10\% & Data-driven NN & 0.146 & 0.146 & 25.0 \\
+10\% & Data-driven NN + Projection & 0.142 & 0.141 & 0.0 \\
+10\% & Domain-informed NN & 0.136 & 0.135 & 14.7 \\
+\midrule
+5\% & Ridge & 0.318 & 0.310 & 42.7 \\
+5\% & Ridge + Projection & 0.298 & 0.289 & 0.0 \\
+5\% & Data-driven NN & 0.330 & 0.318 & 44.9 \\
+5\% & Data-driven NN + Projection & 0.293 & 0.295 & 0.0 \\
+5\% & Domain-informed NN & 0.222 & 0.219 & 19.4 \\
+\bottomrule
+\end{tabular}
+\end{table}

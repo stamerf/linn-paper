@@ -1,0 +1,7 @@
+{
+  "positive_worlds": 19,
+  "negative_worlds": 1,
+  "median_world_relative_improvement": 0.1739129732473201,
+  "minimum_world_relative_improvement": -0.004132376419651353,
+  "maximum_world_relative_improvement": 0.3923696723852567
+}

@@ -1,0 +1,77 @@
+{
+  "SIM_A:full": {
+    "candidate": {
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "learning_rate": 0.003,
+      "weight_decay": 0.0001,
+      "batch_size": 32
+    },
+    "candidate_index": 0,
+    "constraint_weight": 0.1
+  },
+  "SIM_A:limited": {
+    "candidate": {
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "learning_rate": 0.003,
+      "weight_decay": 0.0001,
+      "batch_size": 32
+    },
+    "candidate_index": 0
+  },
+  "SIM_B:full": {
+    "candidate": {
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "learning_rate": 0.003,
+      "weight_decay": 0.0001,
+      "batch_size": 32
+    },
+    "candidate_index": 0,
+    "constraint_weight": 0.1
+  },
+  "SIM_B:limited": {
+    "candidate": {
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "learning_rate": 0.003,
+      "weight_decay": 0.0001,
+      "batch_size": 32
+    },
+    "candidate_index": 0
+  },
+  "SIM_C:full": {
+    "candidate": {
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "learning_rate": 0.003,
+      "weight_decay": 0.0001,
+      "batch_size": 32
+    },
+    "candidate_index": 1,
+    "constraint_weight": 1.0
+  },
+  "SIM_C:limited": {
+    "candidate": {
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "learning_rate": 0.003,
+      "weight_decay": 0.0001,
+      "batch_size": 32
+    },
+    "candidate_index": 1
+  }
+}
