@@ -116,4 +116,4 @@ inputs. Soft penalties may reduce violations; projection guarantees feasible
 outputs. Synthetic gains do not establish industrial superiority or downstream
 planning benefits.
 
-Zenodo archival DOI: pending.
+Zenodo archival DOI: 10.5281/zenodo.24165740.
